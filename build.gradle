@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+// This mod is data-only (just recipe JSON files), so no Loom or Minecraft
+// dependency is needed. Gradle simply packs src/main/resources into a jar.
+
+version = project.mod_version
+
+tasks.processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version
+    }
+}
+
+tasks.jar {
+    archiveBaseName = 'betterstonecutter'
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "betterstonecutter",
+  "version": "${version}",
+  "name": "Better Stonecutter",
+  "description": "Stonecutters can also cut wood, cobblestone into stone, and stone into smooth stone.",
+  "authors": [
+    "You"
+  ],
+  "license": "CC0-1.0",
+  "environment": "*",
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3"
+  }
+}
